@@ -2,8 +2,10 @@
 //JAVA 21
 //COMPILE_OPTIONS --enable-preview --source 21 -Xlint:preview
 //RUNTIME_OPTIONS --enable-preview --source 21 
+import static java.lang.System.out;
 
 void main() {
     var a = this.getClass();
-    System.out.println(STR."Hello \{a}!");
+    out.println(STR."Hello \"\{a}\"!");
+    out.println("And bye.");
 }
