@@ -1,0 +1,9 @@
+#!/usr/bin/env -S jbang
+//JAVA 21
+//COMPILE_OPTIONS --enable-preview --source 21 -Xlint:preview
+//RUNTIME_OPTIONS --enable-preview --source 21 
+
+void main() {
+    var a = this.getClass();
+    System.out.println(STR."Hello \{a}!");
+}
